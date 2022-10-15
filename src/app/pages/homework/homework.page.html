@@ -13,7 +13,10 @@
   <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
-  <h4 *ngIf="lsthomework.length == 0" style="text-align: center; font-size: 15px;">Redirection, veuillez patienter</h4>
+      <div *ngIf="lsthomework.length == 0">
+    <ion-spinner name="lines-sharp"></ion-spinner>
+  </div>
+  <!-- <h4 *ngIf="lsthomework.length == 0" style="text-align: center; font-size: 15px;">Redirection, veuillez patienter</h4> -->
   <ion-list style="height: 100%;  background: linear-gradient(to right, #ffffff, #f8f8f8);">
 
 

@@ -12,8 +12,11 @@
   <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
-  <h4 *ngIf="lstnotif.length == 0" style="text-align: center; font-size: 15px;">Redirection, veuillez patienter</h4>
-<ion-list>
+  <!-- <h4 *ngIf="lstnotif.length == 0" style="text-align: center; font-size: 15px;">Redirection, veuillez patienter</h4> -->
+    <div *ngIf="lstnotif.length == 0">
+    <ion-spinner name="lines-sharp"></ion-spinner>
+  </div>
+  <ion-list>
  <ng-container *ngIf="lstnotif.length!=0" >
   <ng-container *ngFor="let item of lstnotif" >
 

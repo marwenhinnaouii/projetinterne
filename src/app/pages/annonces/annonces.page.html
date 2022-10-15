@@ -3,7 +3,9 @@
   <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
-  <h4 *ngIf="lstAnnon.length == 0" style="text-align: center; font-size: 15px;">Redirection, veuillez patienter</h4>
+  <div *ngIf="lstAnnon.length == 0">
+    <ion-spinner name="lines-sharp"></ion-spinner>
+  </div>
 
 <ion-list id="list">
  <ng-container *ngIf="lstAnnon.length!=0" >

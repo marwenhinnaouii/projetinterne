@@ -20,8 +20,10 @@
 </ion-header>
 
 <ion-content fullscreen>
-  <h4 *ngIf="classes.length == 0" style="text-align: center; font-size: 15px;">Redirection, veuillez patienter</h4>
-
+  <!-- <h4 *ngIf="classes.length == 0" style="text-align: center; font-size: 15px;">Redirection, veuillez patienter</h4> -->
+  <div *ngIf="classes.length == 0">
+    <ion-spinner name="lines-sharp"></ion-spinner>
+  </div>
   <body style="width: 100%" *ngIf="lstclasses">
     <div class='main-div'>
       <div class="row">

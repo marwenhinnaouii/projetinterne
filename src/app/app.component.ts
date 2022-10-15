@@ -28,6 +28,7 @@ export class AppComponent {
    langueDe;
    latitude;
    longitude;
+   longitud;
 
   constructor(
     private router: Router,

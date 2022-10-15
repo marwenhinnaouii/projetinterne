@@ -1,4 +1,4 @@
-package io.dndserv_enn.ltc;
+package io.dndserv.ltc;
 
 import android.app.AlertDialog;
 import android.app.DownloadManager;
